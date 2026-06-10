@@ -1,0 +1,46 @@
+{
+  "SettingsVersion": 1.2,
+  "LocalHostIp": "0.0.0.0",
+  "SimMode": "Multirotor",
+  "ClockSpeed": 1.0,
+  "OriginGeopoint": {
+    "Latitude": 47.641468,
+    "Longitude": -122.140165,
+    "Altitude": 122.0
+  },
+  "PawnPaths": {
+    "MoHinhArWing": {
+      "PawnBP": "Class'/Game/ArWing_2kg2/BP_ArWing_VTOL.BP_ArWing_VTOL_C'"
+    }
+  },
+  "Vehicles": {
+    "ArWing_PX4": {
+      "VehicleType": "PX4Multirotor",
+      "UseSerial": false,
+      "UseTcp": true,
+      "TcpPort": 4560,
+      "LocalHostIp": "0.0.0.0",
+      "PawnPath": "MoHinhArWing",
+
+      "linear_drag_coefficient": 0.02, 
+      "Parameters": {
+       "Mass": 2.2
+      },
+      "Rotors": {
+        "rotor_0": { "X": 0.25, "Y": 0.25, "Z": 0.0, "Normal": [0, 0, -1], "Direction": -1, "MaxThrust": 6.2, "MaxRPM": 15000 },
+        "rotor_1": { "X": -0.25, "Y": -0.25, "Z": 0.0, "Normal": [0, 0, -1], "Direction": -1, "MaxThrust": 6.2, "MaxRPM": 15000 },
+        "rotor_2": { "X": 0.25, "Y": -0.25, "Z": 0.0, "Normal": [0, 0, -1], "Direction": 1, "MaxThrust": 6.2, "MaxRPM": 15000 },
+        "rotor_3": { "X": -0.25, "Y": 0.25, "Z": 0.0, "Normal": [0, 0, -1], "Direction": 1, "MaxThrust": 6.2, "MaxRPM": 15000 },
+        "rotor_4": { "X": -0.35, "Y": 0.0, "Z": 0.0, "Normal": [-1, 0, 0], "Direction": 1, "MaxThrust": 120.0, "MaxRPM": 18000 }
+      },
+
+
+      "Sensors": {
+        "Barometer": {"SensorType": 1, "Enabled": true},
+        "Imu": {"SensorType": 2, "Enabled": true},
+        "Gps": {"SensorType": 3, "Enabled": true},
+        "Magnetometer": {"SensorType": 4, "Enabled": true}
+      }
+    }
+  }
+}
