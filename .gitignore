@@ -1,0 +1,25 @@
+# Build files
+build/
+dist/
+bin/
+obj/
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+
+# Node.js
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
